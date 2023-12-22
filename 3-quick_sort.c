@@ -43,13 +43,13 @@ int split_arrays(int *arr, int lw, int h, int s)
 }
 
 /**
- * recursion - sort the array using recursion
+ * recurs - sort the array using recursion
  * @arr: array
  * @lw: lowest index
  * @h: highest index
  * @s: size
 */
-void recursion(int *arr, int lw, int h, size_t s)
+void recurs(int *arr, int lw, int h, size_t s)
 {
 	if (lw < h)
 	{
@@ -62,10 +62,10 @@ void recursion(int *arr, int lw, int h, size_t s)
 
 /**
  * quick_sort - sort an array using the quick sort algorithm
- * @arr: array
- * @s: size
+ * @array: array
+ * @size: size
 */
-void quick_sort(int *arr, size_t s)
+void quick_sort(int *array, size_t size)
 {
-	recursion(arr, 0, (int)s - 1, s);
+	recurs(array, 0, (int)size - 1, size);
 }

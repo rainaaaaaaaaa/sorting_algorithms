@@ -25,10 +25,10 @@ void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
-void quick_sort(int *arr, size_t s);
+void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 void swap_values(int *a, int *b);
 int split_arrays(int *arr, int lw, int h, int s);
-void recursion(int *arr, int lw, int h, size_t s);
+void recurs(int *arr, int lw, int h, size_t s);
 
 #endif
