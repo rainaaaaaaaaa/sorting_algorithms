@@ -33,7 +33,7 @@ int split_arrays(int *arr, int lw, int h, int s)
 		if (arr[y] <= pivot)
 		{
 			if (y != x)
-				swap_values(y, x);
+				swap_values(&arr[y], &arr[x]);
 			x++;
 		}
 	}
