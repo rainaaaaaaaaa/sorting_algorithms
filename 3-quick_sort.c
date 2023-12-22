@@ -55,8 +55,8 @@ void recurs(int *arr, int lw, int h, size_t s)
 	{
 		int indx = split_values(arr, lw, h, s);
 
-		recursion(arr, lw, indx - 1, s);
-		recursion(arr, indx + 1, h, s);
+		recurs(arr, lw, indx - 1, s);
+		recurs(arr, indx + 1, h, s);
 	}
 }
 
