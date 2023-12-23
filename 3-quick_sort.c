@@ -7,9 +7,9 @@
 */
 void swap_values(int *a, int *b)
 {
-        int temp = *a;
-        *a = *b;
-        *b = temp;
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
 /**
@@ -33,12 +33,18 @@ int split_arrays(int *arr, int lw, int h, int s)
 		if (arr[y] <= pivot)
 		{
 			if (y != x)
+			{
 				swap_values(&arr[y], &arr[x]);
+				print_array(arr, s);
+			}
 			x++;
 		}
 	}
 	if (x != h)
+	{
 		swap_values(&arr[x], &arr[h]);
+		print_array(arr, s);
+	}
 	return (x);
 }
 
