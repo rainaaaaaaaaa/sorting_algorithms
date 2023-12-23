@@ -53,7 +53,7 @@ void recurs(int *arr, int lw, int h, size_t s)
 {
 	if (lw < h)
 	{
-		int indx = split_values(arr, lw, h, s);
+		int indx = split_arrays(arr, lw, h, s);
 
 		recurs(arr, lw, indx - 1, s);
 		recurs(arr, indx + 1, h, s);
