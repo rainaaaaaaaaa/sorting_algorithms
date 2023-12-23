@@ -28,7 +28,7 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 void swap_values(int *a, int *b);
-int split_arrays(int *arr, int lw, int h, int s);
-void recurs(int *arr, int lw, int h, size_t s);
+int split_arrays(int *array, int lw, int h, int size);
+void recurs(int *array, int lw, int h, size_t size);
 
 #endif
