@@ -1,5 +1,5 @@
-#ifndef H
-#define H
+#ifndef SORT_H
+#define SORT_H
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -29,6 +29,6 @@ void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 void swap_values(int *a, int *b);
 int split_arrays(int *array, int lw, int h, int size);
-void recurs(int *array, int lw, int h, size_t size);
+void recurs(int *arr, int lw, int h, size_t s);
 
 #endif

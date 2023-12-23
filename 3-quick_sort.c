@@ -38,7 +38,7 @@ int split_arrays(int *arr, int lw, int h, int s)
 		}
 	}
 	if (x != h)
-		swap_values(x, h);
+		swap_values(&arr[x], &arr[h]);
 	return (x);
 }
 
